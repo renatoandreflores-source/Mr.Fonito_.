@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contáctanos | Mr.Fonito</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <i class="fa-brands fa-apple"></i>
+                <span>Mr.Fonito</span>
+            </div>
+            <nav class="nav-links">
+                <ul>
+                    <li><a href="index.html">Products</a></li>
+                    <li><a href="servicios.html">Services</a></li>
+                    <li><a href="adultos.html">Team Senior</a></li>
+                    <li><a href="contactos.html" class="active">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <a href="#" class="btn-carrito"><i class="fa-solid fa-cart-shopping"></i> Carrito</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="section-container bg-gray" style="min-height: 82vh;">
+            <h2 class="section-title">Contáctanos</h2>
+            <p class="section-subtitle">Déjanos tu consulta y te responderemos pronto.</p>
+            
+            <form id="form-contacto" class="contact-form" novalidate>
+                <div class="form-group">
+                    <input type="text" id="nombre" placeholder="Nombre completo">
+                    <span class="error-msg" id="err-nombre"></span>
+                </div>
+                <div class="form-group">
+                    <input type="email" id="correo" placeholder="Correo electrónico">
+                    <span class="error-msg" id="err-correo"></span>
+                </div>
+                <div class="form-group">
+                    <input type="tel" id="telefono" placeholder="Teléfono">
+                    <span class="error-msg" id="err-telefono"></span>
+                </div>
+                <div class="form-group">
+                    <textarea id="mensaje" rows="5" placeholder="Escribe tu mensaje"></textarea>
+                    <span class="error-msg" id="err-mensaje"></span>
+                </div>
+                <button type="submit" class="btn-submit">Enviar Consulta</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <p>&copy; 2026 Mr.Fonito - Todos los derechos reservados. Lima, Perú.</p>
+        </div>
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+</html>

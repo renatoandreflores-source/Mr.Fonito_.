@@ -1,0 +1,427 @@
+/* ==========================================================================
+   CONFIGURACIONES GLOBALES Y TIPOGRAFÍA (PALETA OSCURA PREMIUM)
+   ========================================================================== */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght=300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #ffffff; /* Texto global blanco para alto contraste */
+    background-color: #000c14; /* Fondo ultra oscuro del mockup */
+    overflow-x: hidden;
+}
+
+/* Clases de fondos cromáticos adaptados a la nueva paleta */
+.bg-light { background-color: #001220; }       /* Azul medianoche para secciones principales */
+.bg-blue-light { background-color: #000c14; }  /* Ultra oscuro para la sección de Adulto Mayor */
+.bg-gray { background-color: #011627; }        /* Gris azulado oscuro para el formulario */
+
+.section-container {
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.section-title {
+    font-size: 2.8rem;
+    color: #ffffff; 
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+.section-subtitle {
+    font-size: 1.1rem;
+    color: #a0aec0; /* Subtítulos en gris claro sutil */
+    margin-bottom: 50px;
+}
+
+/* ==========================================================================
+   HEADER Y NAVEGACIÓN
+   ========================================================================== */
+header {
+    background-color: #000a12; /* Barra de navegación integrada con el fondo */
+    padding: 20px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.header-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.logo {
+    color: #ffffff;
+    font-size: 1.4rem;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.nav-links ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+.nav-links a {
+    color: #a0aec0;
+    text-decoration: none;
+    font-size: 0.95rem;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover, .nav-links a.active {
+    color: #1ea1f2; /* Celeste destacado al pasar el mouse */
+}
+
+.btn-carrito {
+    background-color: #1ea1f2; /* Botón celeste del mockup */
+    color: #ffffff;
+    padding: 10px 22px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.9rem;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    transition: background 0.3s;
+}
+
+.btn-carrito:hover {
+    background-color: #1580c4;
+}
+
+/* ==========================================================================
+   BOCETO 1: HERO SECTION
+   ========================================================================== */
+.hero-section {
+    background-color: #000c14;
+    color: #ffffff;
+    padding: 70px 20px;
+}
+
+.hero-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.hero-text {
+    flex: 1;
+    text-align: left;
+}
+
+.hero-subtitle {
+    color: #a0aec0;
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+}
+
+.hero-title {
+    font-size: 4.5rem;
+    font-weight: 700;
+    line-height: 1.1;
+    margin-bottom: 25px;
+    animation: sliderIn 1s ease-out;
+}
+
+.hero-description {
+    color: #e2e8f0;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 35px;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 15px;
+}
+
+.btn-hero-dark {
+    background-color: #1ea1f2; /* Botón principal celeste */
+    color: #ffffff;
+    padding: 14px 28px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background 0.3s;
+}
+
+.btn-hero-dark:hover {
+    background-color: #1580c4;
+}
+
+.btn-hero-outline {
+    background-color: transparent;
+    color: #ffffff;
+    border: 2px solid #ffffff;
+    padding: 12px 26px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background 0.3s;
+}
+
+.btn-hero-outline:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.hero-image-wrapper {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.hero-image-wrapper img {
+    max-width: 100%;
+    height: 400px;
+    object-fit: contain;
+    filter: drop-shadow(0 20px 30px rgba(0,0,0,0.7)); /* Sombra para resaltar los productos */
+}
+
+@keyframes sliderIn {
+    from { opacity: 0; transform: translateX(-30px); }
+    to { opacity: 1; transform: translateX(0); }
+}
+
+/* ==========================================================================
+   BOCETOS 2 Y 3: DISPOSICIÓN DE TARJETAS BLANCAS CON CONTRASTE ALTO
+   ========================================================================== */
+.products-grid, .cards-grid {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+}
+
+/* Tarjetas con fondo blanco y texto oscuro según el nuevo mockup */
+.guide-card, .product-card {
+    background-color: #ffffff; /* Fondo blanco para las tarjetas */
+    border-radius: 20px;
+    color: #000c14; /* Texto oscuro interno para legibilidad */
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.guide-card {
+    padding: 40px 30px;
+    width: 260px;
+    text-align: center;
+}
+
+.guide-card:hover, .product-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(30, 161, 242, 0.2); /* Brillo celeste al pasar el mouse */
+}
+
+/* Iconos de las tarjetas */
+.card-icon i, .fa-brands-icon i {
+    font-family: "Font Awesome 6 Free" !important;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 3rem;
+    color: #1ea1f2; /* Celeste vibrante */
+    margin-bottom: 20px;
+    display: inline-block;
+}
+
+.fa-brands-icon i {
+    font-family: "Font Awesome 6 Brands" !important;
+}
+
+.guide-card h3, .product-info h3 {
+    font-size: 1.3rem;
+    color: #000c14;
+    margin-bottom: 12px;
+    font-weight: 700;
+}
+
+.guide-card p, .product-info p {
+    color: #4a5568; /* Gris intermedio para los textos descriptivos internos */
+    font-size: 0.95rem;
+    margin-bottom: 25px;
+    line-height: 1.5;
+}
+
+.btn-guide, .btn-ver-mas {
+    display: inline-block;
+    background-color: #1ea1f2;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px 30px;
+    border-radius: 20px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s;
+    width: 100%;
+    text-align: center;
+}
+
+.btn-guide:hover, .btn-ver-mas:hover {
+    background-color: #1580c4;
+}
+
+/* Detalles específicos de las tarjetas del catálogo */
+.product-card {
+    width: 270px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.product-img-holder {
+    height: 220px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f7fafc; /* Fondo gris claro muy sutil para aislar la foto del producto */
+}
+
+.product-img-holder img {
+    max-height: 100%;
+    object-fit: contain;
+}
+
+.product-info {
+    padding: 24px;
+    text-align: left;
+}
+
+.product-price {
+    font-size: 1.8rem;
+    color: #1ea1f2;
+    font-weight: 700;
+    margin: 10px 0;
+}
+
+/* ==========================================================================
+   BOCETO 4: CONTACT FORM
+   ========================================================================== */
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 18px;
+    background-color: #000c14;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    font-size: 1rem;
+    color: #ffffff;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+.contact-form input:focus, .contact-form textarea:focus {
+    border-color: #1ea1f2; /* Destaca el input activo en celeste */
+}
+
+.error-msg {
+    color: #ff3b30;
+    font-size: 0.85rem;
+    margin-top: 6px;
+    display: block;
+}
+
+.btn-submit {
+    width: 100%;
+    background-color: #1ea1f2;
+    color: #ffffff;
+    border: none;
+    padding: 18px;
+    border-radius: 12px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.btn-submit:hover {
+    background-color: #1580c4;
+}
+
+/* ==========================================================================
+   FOOTER SEMÁNTICO
+   ========================================================================== */
+footer {
+    background-color: #000a12;
+    color: #a0aec0;
+    padding: 40px 20px;
+    text-align: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+/* REGLAS RESPONSIVAS */
+@media (max-width: 992px) {
+    .hero-container { flex-direction: column; text-align: center; }
+    .hero-text { text-align: center; }
+    .hero-title { font-size: 3.2rem; }
+    .hero-buttons { justify-content: center; }
+}
+
+@media (max-width: 768px) {
+    .nav-links { display: none; }
+    .products-grid, .cards-grid { flex-direction: column; align-items: center; }
+}
+
+#aviso-bienvenida {
+    position: fixed;
+    top: 85px;
+    right: 20px;
+    background-color: #011627;
+    color: #ffffff;
+    padding: 15px 25px;
+    border-radius: 8px;
+    display: none;
+    z-index: 2000;
+    border-left: 4px solid #1ea1f2;
+}
+.btn-agregar-carrito {
+    display: inline-block;
+    background-color: #1ea1f2;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 12px 30px;
+    border-radius: 20px;
+    font-weight: 600;
+    font-size: 0.95rem;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.1s;
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.btn-agregar-carrito:hover {
+    background-color: #1580c4;
+}

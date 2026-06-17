@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mr.Fonito | Expertos en Apple y Servicio Técnico</title>
+    <meta name="description" content="Líderes en tecnología Apple en Perú. Venta de iPhones, MacBooks y servicio técnico especializado con atención exclusiva para adultos mayores.">
+    <meta name="keywords" content="Mr Fonito, Apple Peru, iPhone 15 Pro Max, servicio tecnico Apple, adulto mayor Lima">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+</head>
+<body>
+
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <i class="fa-brands fa-apple"></i>
+                <span>Mr.Fonito</span>
+            </div>
+            <nav class="nav-links">
+                <ul>
+                    <li><a href="index.html" class="active">Products</a></li>
+                    <li><a href="servicios.html">Services</a></li>
+                    <li><a href="adultos.html">Team Senior</a></li>
+                    <li><a href="contactos.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <a href="#" class="btn-carrito"><i class="fa-solid fa-cart-shopping"></i> Carrito</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero-section">
+            <div class="hero-container">
+                <div class="hero-text">
+                    <p class="hero-subtitle">Líderes en tecnología Apple en Perú</p>
+                    <h1 class="hero-title">iPhone 15<br>Pro Max</h1>
+                    <p class="hero-description">Equipos nuevos, sellados y con garantía oficial. Diseñados en titanio con el chip A17 Pro definitivo.</p>
+                    <div class="hero-buttons">
+                        <a href="#catalogo" class="btn-hero-dark">Comprar con Garantía</a>
+                        <a href="adultos.html" class="btn-hero-outline"><i class="fa-solid fa-user-graduate"></i> Asesoría Adulto Mayor</a>
+                    </div>
+                </div>
+                <div class="hero-image-wrapper">
+                    <img id="banner-dinamico" src="https://images.unsplash.com/photo-1695048133142-1a20484d2569?auto=format&fit=crop&w=800&q=80" alt="iPhone 15 Pro Max" style="cursor: pointer;">
+                </div>
+            </div>
+        </section>
+
+        <section id="catalogo" class="section-container bg-light">
+            <h2 class="section-title">Productos Destacados</h2>
+            <p class="section-subtitle">Explora nuestra selección premium de dispositivos Apple con garantía oficial.</p>
+            <div id="contenedor-productos" class="products-grid"></div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <p>&copy; 2026 Mr.Fonito - Todos los derechos reservados. Lima, Perú.</p>
+        </div>
+    </footer>
+
+    <div id="aviso-bienvenida"></div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
